@@ -68,7 +68,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \ifxetexorluatex
-  \setmainfont{Minion Pro}
+  \setmainfont{Kinnari}[
+	Path = Fonts/,
+	UprightFont = Kinnari,
+	ItalicFont = *-Italic,
+	BoldFont = *-Bold,
+	BoldItalicFont = *-BoldItalic,
+	Extension = .otf
+]
 \else
   \usepackage[lf]{ebgaramond}
   \usepackage[oldstyle,scale=0.7]{sourcecodepro}
@@ -100,9 +107,14 @@
 % Incipit
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{\texttt{latex-mimosis}}
-\subtitle{A minimal, modern \LaTeX{} package for typesetting your thesis}
-\author{Bastian Rieck}
+
+\title{แอปพลิเคชันช่วยทำกายภาพบำบัด\\ผ่านโทรศัพท์มือถือ}
+\subtitle{Physical Therapy Assistant Mobile Application}
+\author{
+	นายนันทพัทธ์ หิรัญณัฐธีร์\\
+	นายนาธาร เยี่ยงศุภพานนทร์
+}
+\supervisor{ผศ.ดร. บุญประเสริฐ}
 
 \begin{document}
 

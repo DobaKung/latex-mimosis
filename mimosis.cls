@@ -2,11 +2,11 @@
 \ProvidesClass{mimosis}[2017/08/01 Minimal modern thesis class]
 
 \LoadClass[paper=a4,
-           twoside,
            pagesize,
            11pt,
-           DIV=10,                % TODO: Make configurable
-           BCOR=10mm,             % TODO: Make configurable
+           oneside, % change to twoside if you wish
+           DIV=12,
+           BCOR=0mm, % set binding correction (inner side)
            cleardoublepage=empty,
            numbers=noenddot,
            titlepage,
@@ -38,7 +38,7 @@
 % while keeping hyphenation rules correct. Should you add another one
 % in the list, please ensure that `english` is the last one. The last
 % language is used to control standard hyphenation.
-\usepackage[ngerman,french,english]{babel}
+\usepackage[french,english]{babel}
 
 \RequirePackage{csquotes} % Context-sensitive quotation marks
 \RequirePackage{makeidx}  % For creating indices
@@ -240,3 +240,10 @@
 \renewcommand*{\chapterformat}{%
   \fontsize{50}{55}\selectfont\thechapter\autodot\enskip
 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% KMITL
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand\supervisor[1]{\renewcommand\@supervisor{#1}}
+\newcommand\@supervisor{}
